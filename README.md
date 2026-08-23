@@ -35,7 +35,7 @@ What didn't work is recorded on the spot in a friction log, capturing the moment
 
 #### What the operating data says
 
-`2026-05-30 → 2026-08-23`  ·  **5** projects  ·  **54** sessions  ·  **329** commits  ·  **743** human prompts
+`2026-05-30 → 2026-08-23`  ·  **5** projects  ·  **54** sessions  ·  **370** commits  ·  **743** human prompts
 
 The claims above are worth only as much as the evidence behind them, so the
 numbers here are generated from session logs, git history, and GitHub Actions.
@@ -43,10 +43,10 @@ None of them are written by hand.
 
 | | | |
 |---|---:|---|
-| Verification pass rate | 97.1% | over 443 runs — checks that actually fail, so the gate is real |
-| Rework rate | 4.0% | fix and revert commits ÷ 329 |
-| PR merge rate | 92.7% | 140 merged |
-| Time to merge (median) | 0.39 h | p90 13.96 h |
+| Verification pass rate | 97.9% | over 473 runs — checks that actually fail, so the gate is real |
+| Rework rate | 7.0% | 25 fix/revert out of 357 conventional commits |
+| PR merge rate | 94.3% | 166 merged |
+| Time to merge (median) | 0.4 h | p90 12.91 h |
 | PR size (median) | 6 files | slices stay small |
 
 Work delegated to each role agent, with how often that agent hit a tool error:
@@ -64,7 +64,7 @@ the architect against 11 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
-<sub>Generated 2026-08-23 11:37 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-08-23 13:46 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
