@@ -35,7 +35,7 @@ What didn't work is recorded on the spot in a friction log, capturing the moment
 
 #### What the operating data says
 
-`2026-05-30 → 2026-08-23`  ·  **5** projects  ·  **54** sessions  ·  **370** commits  ·  **743** human prompts
+`2026-05-30 → 2026-08-23`  ·  **5** projects  ·  **57** sessions  ·  **371** commits  ·  **772** human prompts
 
 The claims above are worth only as much as the evidence behind them, so the
 numbers here are generated from session logs, git history, and GitHub Actions.
@@ -43,9 +43,9 @@ None of them are written by hand.
 
 | | | |
 |---|---:|---|
-| Verification pass rate | 97.9% | over 473 runs — checks that actually fail, so the gate is real |
-| Rework rate | 7.0% | 25 fix/revert out of 357 conventional commits |
-| PR merge rate | 94.3% | 166 merged |
+| Verification pass rate | 97.7% | over 473 runs — checks that actually fail, so the gate is real |
+| Rework rate | 7.0% | 25 fix/revert out of 358 conventional commits |
+| PR merge rate | 93.8% | 166 merged |
 | Time to merge (median) | 0.4 h | p90 12.91 h |
 | PR size (median) | 6 files | slices stay small |
 
@@ -53,8 +53,8 @@ Work delegated to each role agent, with how often that agent hit a tool error:
 
 ```
 architect  ██████████████████  66   tool errors 6.2%
-designer   █                    3   tool errors 5.0%
-developer  ████████████        44   tool errors 3.5%
+designer   █                    4   tool errors 5.1%
+developer  █████████████       46   tool errors 3.5%
 tester     ██████              21   tool errors 2.2%
 reviewer   ███                 11   tool errors 3.4%
 ```
@@ -64,7 +64,7 @@ the architect against 11 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
-<sub>Generated 2026-08-23 13:46 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-08-23 13:53 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
