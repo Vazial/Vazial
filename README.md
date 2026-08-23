@@ -1,35 +1,43 @@
-Backend engineer. Lately I've been deep into domain-driven design and building development infrastructure around AI agents. I'm working to shift from implementation toward design and architecture.
+Backend engineer. I build development infrastructure around AI agents, and I'm moving
+from implementation toward design and architecture.
 
-## Where I am, and where I'm headed
+My day job is backend development in C#/.NET and Java. Alongside that I've been
+building a template for delegating implementation to AI agents — and measuring, from
+the operating logs, whether the method I wrote is actually being followed.
 
-My day job is backend development in C#/.NET and Java. Alongside that, I'm studying and practicing DDD and architectural design so I can bring them into real projects.
+**[vazial.github.io](https://vazial.github.io/)** — case studies and operating data.
+Written in Japanese, with an English summary on the front page.
 
-📍 Based in Toyama, Japan
+## What I'm building
 
-## Selected work
-
-### DDD modeling workshop — a meeting room reservation system
-
-Starting from meeting room booking as the domain, I worked through EventStorming, aggregate boundaries, concurrency control, and state modeling — following a repeatable procedure rather than intuition. The design decisions came out as 8 ADRs plus acceptance scenarios in Gherkin, and I carried them through to a Java/Spring implementation.
-
-What I care about here is that the reasoning stays traceable. One example: **a cancellation is a fact, not a status.** The only raw data stored is `cancelledAt`, and the status is derived from it. That derivation lives in exactly one place — `ReservationStatus.of()` — so it stays a single source of truth. Each decision is recorded with the reasoning behind it and the cost it carries.
-
-- [projects/reservation-system](https://github.com/Vazial/ai-driven-dev-template/tree/main/projects/reservation-system) — domain model, contracts, and tests
-- [Workshop summary](https://github.com/Vazial/ai-driven-dev-template/blob/main/projects/reservation-system/docs/workshop-summary-01-reservation.md) — one page on what I decided and why
-- [ADRs 0001–0008](https://github.com/Vazial/ai-driven-dev-template/tree/main/projects/reservation-system/adr) — design decisions from the implementation phase
-
-### A template system for AI-driven development
-
-A language-agnostic template intended as a foundation for any work where implementation is delegated to AI agents. The bet it makes: **put the guarantee of correctness in mechanized verification rather than human review.** Human involvement narrows to stating intent and approving the decisions that are expensive to reverse; confirming correctness moves to CI.
-
-- **Five agents** — architect / designer / developer / tester / reviewer. Separating tester from reviewer is the crux: if an agent audits the step definitions it wrote itself, a misreading comes back reported as "matches the scenario."
-- **Three layers** — A (language-agnostic principles and rules), B (stack- and design-pack-specific parts), C (project-specific)
-- **Five assurance levels, L1–L5** — unit tests and lint; structural checks on dependency direction (ArchUnit); API contract and DB constraints; acceptance scenarios; experience quality. Failures get caught at the level closest to the machine.
-- **PRINCIPLES.md (P-01–P-11)** — the reasoning to fall back on, kept to one page
+A language-agnostic template for AI-driven development. The bet it makes:
+**put the guarantee of correctness in mechanised verification rather than human
+review.** Reviewing AI output by hand does not scale, and it fails quietly — the
+reviewer gets tired before the code gets correct. Human involvement narrows to four
+approval points; everything else moves into five verification levels, run by role
+agents with separated context.
 
 → [Vazial/ai-driven-dev-template](https://github.com/Vazial/ai-driven-dev-template)
 
-What didn't work is recorded on the spot in a friction log, capturing the moments where the AI hesitated or got things wrong. When the same cause appears twice, it's treated as a structural defect and a rule change gets proposed.
+## Selected work
+
+**[Boundaries a test can enforce](https://vazial.github.io/case/reservation/)** —
+a meeting-room booking domain taken from EventStorming through aggregate boundaries
+and concurrency control into Java 21 and Spring Boot. The domain layer holds zero
+framework imports and an ArchUnit test fails the build if that changes; double booking
+is verified against a real PostgreSQL `EXCLUDE` constraint, with the application-layer
+check deliberately bypassed so the constraint is proven on its own. Built to practise
+the procedure — not built out, and not operated.
+
+**[A loop that catches my own drift](https://vazial.github.io/case/harvest/)** —
+development friction is meant to be logged as it happens, and in practice it isn't. So
+the session logs get scanned for the moments worth reading. The first thing it caught
+was one of my own rules breaking for the fourth time, found by measuring 49 decision
+records rather than by arguing about taste.
+
+**[Session Radar](https://github.com/Vazial/ai-driven-dev-template/tree/main/projects/connpass-session-radar)** —
+the one thing here that actually runs: a scheduled job that filters event listings each
+morning and delivers a single digest to Discord.
 
 <!-- dev-telemetry:begin -->
 
@@ -64,7 +72,7 @@ the architect against 11 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
-[The same data, laid out in full →](https://vazial.github.io/)
+[The same data, laid out in full →](https://vazial.github.io/data/)
 
 <sub>Generated 2026-08-23 23:08 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
@@ -72,26 +80,35 @@ my own drift away from the procedure is the reason the measurements exist.
 
 ## Technical skills
 
-**Languages and implementation**
-C#/.NET (including DDD and SOLID in practice), Java/Spring, C/C++ (template metaprogramming: CRTP, constexpr, policy-based design), Vue 3/TypeScript (lightly)
+Split by what I can actually show, because a flat list doesn't say which claims are
+backed by something you can read.
 
-**Data and databases**
-Oracle PL/SQL, including performance tuning
+**Demonstrable in public code**
+Java 21 / Spring Boot (hexagonal layering enforced by ArchUnit, Testcontainers against
+real PostgreSQL, Cucumber with a DSL layer, Flyway migrations) · TypeScript (Vitest,
+Playwright end-to-end, API types generated from OpenAPI) · Python · PostgreSQL ·
+GitHub Actions · OpenAPI
 
-**Design and architecture**
-DDD, SOLID, module refactoring (characterization tests, feature flags, staged rollout)
+**Used professionally, not public**
+C#/.NET, including DDD and SOLID in practice · Oracle PL/SQL, including performance
+tuning · C/C++ template metaprogramming (CRTP, constexpr, policy-based design) ·
+module refactoring with characterization tests, feature flags and staged rollout
 
-**Infrastructure and development environments**
-Docker / Podman / Dev Containers, WSL2 tuning, remote development setups over Tailscale, SSH, and tmux, self-hosting a GitHub MCP server
+**Environments and operations**
+Docker / Podman / Dev Containers · WSL2 tuning · remote development over Tailscale,
+SSH and tmux · AWS (Route 53, EC2) · Render · Vercel · self-hosted GitHub MCP server
 
-**Cloud**
-AWS at the level of "I can stand up an environment myself to get an app running" — registering a domain and configuring DNS in Route 53, setting up environments on EC2.
+## Certifications
 
-## Learning and interests
-
-- Reading technical documentation in English — working through API references like MDN as ongoing practice
-- C++ template metaprogramming, and comparing metaprogramming across languages (Source Generators, annotation processors, TypeScript conditional types)
+Applied Information Technology Engineer (AP) and Fundamental Information Technology
+Engineer (FE), both 2022 — national examinations administered by Japan's
+Information-technology Promotion Agency.
 
 ## Background
 
-I studied electronic circuits, embedded systems, and VHDL at university. Being able to move up and down the abstraction stack, from hardware to applications, still helps.
+I studied electronic circuits, embedded systems and VHDL at university. Being able to
+move up and down the abstraction stack, from hardware to applications, still helps.
+
+Currently reading technical documentation in English as ongoing practice, and comparing
+metaprogramming across languages — C++ templates against Source Generators, annotation
+processors and TypeScript conditional types.
