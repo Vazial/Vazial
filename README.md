@@ -31,6 +31,43 @@ A language-agnostic template intended as a foundation for any work where impleme
 
 What didn't work is recorded on the spot in a friction log, capturing the moments where the AI hesitated or got things wrong. When the same cause appears twice, it's treated as a structural defect and a rule change gets proposed.
 
+<!-- dev-telemetry:begin -->
+
+#### What the operating data says
+
+`2026-05-30 → 2026-08-23`  ·  **5** projects  ·  **54** sessions  ·  **329** commits  ·  **743** human prompts
+
+The claims above are worth only as much as the evidence behind them, so the
+numbers here are generated from session logs, git history, and GitHub Actions.
+None of them are written by hand.
+
+| | | |
+|---|---:|---|
+| Verification pass rate | 97.1% | over 443 runs — checks that actually fail, so the gate is real |
+| Rework rate | 4.0% | fix and revert commits ÷ 329 |
+| PR merge rate | 92.7% | 140 merged |
+| Time to merge (median) | 0.39 h | p90 13.96 h |
+| PR size (median) | 6 files | slices stay small |
+
+Work delegated to each role agent, with how often that agent hit a tool error:
+
+```
+architect  ██████████████████  66   tool errors 6.2%
+designer   █                    3   tool errors 5.0%
+developer  ████████████        44   tool errors 3.5%
+tester     ██████              21   tool errors 2.2%
+reviewer   ███                 11   tool errors 3.4%
+```
+
+Dispatch thins out toward the later roles — 66 runs of
+the architect against 11 of the reviewer. **The audit step
+is not being run as often as the rules call for.** I'm leaving that in view: catching
+my own drift away from the procedure is the reason the measurements exist.
+
+<sub>Generated 2026-08-23 11:37 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+
+<!-- dev-telemetry:end -->
+
 ## Technical skills
 
 **Languages and implementation**
