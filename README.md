@@ -1,5 +1,6 @@
-Backend engineer. I build development infrastructure around AI agents, and I'm moving
-from implementation toward design and architecture.
+Backend engineer, aiming to be a designer who can also implement — that has been the
+goal from the start rather than a recent turn. The domain I want is domain-driven
+design; containers, infrastructure-as-code and AWS interest me about equally.
 
 My day job is backend development in C#/.NET and Java. Alongside that I've been
 building a template for delegating implementation to AI agents — and measuring, from
@@ -86,7 +87,7 @@ than by language.
 | | Stack |
 |---|---|
 | Control systems | C, C# |
-| Production management system | C#, Oracle PL/SQL — including performance tuning |
+| Production management system | C#, Oracle PL/SQL — batch processing over hundreds of millions of rows, where performance is the constraint. Ongoing. |
 | Batch processing | Java — Spring Batch, JPA, JUnit, Mockito |
 | [Reception and booking system](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C#, PostgreSQL, Vitest, API types generated from OpenAPI — founding member of a team of seven, from requirements through unit test. In production. |
 
@@ -111,7 +112,10 @@ Information-technology Promotion Agency.
 
 ## Background
 
-I came in through hardware — microcontrollers in C, electronic and electrical circuit
-design, soldering — before moving through control engineering and production
-management into the systems above. Being able to move up and down the abstraction
-stack, from a board to a web application, is what those projects have in common.
+I trained at a four-year polytechnic college, where the emphasis is on building things
+rather than on theory. The first two years were microcontrollers in C, object-oriented
+programming in Java, and electronic and electrical circuit design down to the soldering
+iron; the applied years added control engineering, production management and robotics.
+
+Being able to move up and down the abstraction stack — from a board to a web
+application — is what the work above has in common.
