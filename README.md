@@ -90,9 +90,8 @@ Playwright end-to-end, API types generated from OpenAPI) · Python · PostgreSQL
 GitHub Actions · OpenAPI
 
 **Used professionally, not public**
-C#/.NET, including DDD and SOLID in practice · Oracle PL/SQL, including performance
-tuning · C/C++ template metaprogramming (CRTP, constexpr, policy-based design) ·
-module refactoring with characterization tests, feature flags and staged rollout
+C#/.NET · Oracle PL/SQL, including performance tuning · C/C++ template metaprogramming
+(CRTP, constexpr, policy-based design)
 
 **Environments and operations**
 Docker / Podman / Dev Containers · WSL2 tuning · remote development over Tailscale,
