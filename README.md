@@ -86,22 +86,22 @@ than by language.
 | | Stack |
 |---|---|
 | Control systems | C, C# |
-| Production management system | C#, Oracle PL/SQL (including performance tuning) |
+| Production management system | C#, Oracle PL/SQL — including performance tuning |
 | Batch processing | Java — Spring Batch, JPA, JUnit, Mockito |
-| [Reception and booking system](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C# — founding member of a team of seven, from requirements through unit test. In production. |
+| [Reception and booking system](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C#, PostgreSQL, Vitest, API types generated from OpenAPI — founding member of a team of seven, from requirements through unit test. In production. |
 
 Container-based development environments — Docker, Podman, Dev Containers — and AWS
 EC2 in a work context.
 
 ## Also used, in public code only
 
-These come from personal projects, where the code is readable. I have not used them
-professionally.
+These come from personal projects, where the code is readable. I have **not** used them
+professionally, and the separation is the point: a flat list would not tell you which
+is which.
 
 Java 21 / **Spring Boot** — hexagonal layering enforced by ArchUnit, Testcontainers
 against real PostgreSQL, Cucumber with a DSL layer, Flyway migrations ·
-**TypeScript** with Playwright end-to-end · **Python** · GitHub Actions · Route 53,
-Render, Vercel
+**Playwright** end-to-end · **Python** · GitHub Actions · Route 53, Render, Vercel
 
 ## Certifications
 
@@ -111,6 +111,7 @@ Information-technology Promotion Agency.
 
 ## Background
 
-I studied electronic circuits, embedded systems and VHDL at university, and started out
-on control systems. Being able to move up and down the abstraction stack — from
-hardware to web applications — is what the four projects above have in common.
+I came in through hardware — microcontrollers in C, electronic and electrical circuit
+design, soldering — before moving through control engineering and production
+management into the systems above. Being able to move up and down the abstraction
+stack, from a board to a web application, is what those projects have in common.
