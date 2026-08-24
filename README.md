@@ -87,9 +87,9 @@ than by language.
 | | Stack |
 |---|---|
 | Control systems | C, C# |
-| Production management system | C#, Oracle PL/SQL — batch processing over hundreds of millions of rows, where performance is the constraint. Ongoing. |
-| Batch processing | Java — Spring Batch, JPA, JUnit, Mockito |
-| [Reception and booking system](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C#, PostgreSQL, Vitest, API types generated from OpenAPI — founding member of a team of seven, from requirements through unit test. In production. |
+| Production management | C#, Java (Seasar2), Oracle PL/SQL — batch processing over hundreds of millions of rows, where performance is the binding constraint. Ongoing. |
+| Batch jobs for an internal authentication platform | Java — Spring Batch, JPA, JUnit, Mockito. This is where I learned the Spring ecosystem and unit testing properly. |
+| [Reception and booking system](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C#, PostgreSQL, Vitest, API types generated from OpenAPI — founding member, from requirements through unit test. In production. |
 
 Container-based development environments — Docker, Podman, Dev Containers — and AWS
 EC2 in a work context.
