@@ -44,7 +44,7 @@ morning and delivers a single digest to Discord.
 
 #### What the operating data says
 
-`2026-05-30 → 2026-08-24`  ·  **5** projects  ·  **71** sessions  ·  **675** commits  ·  **881** human prompts
+`2026-05-30 → 2026-08-24`  ·  **5** projects  ·  **73** sessions  ·  **706** commits  ·  **904** human prompts
 
 The claims above are worth only as much as the evidence behind them, so the
 numbers here are generated from session logs, git history, and GitHub Actions.
@@ -53,29 +53,29 @@ None of them are written by hand.
 | | | |
 |---|---:|---|
 | Verification pass rate | 98.5% | over 800 runs — checks that actually fail, so the gate is real |
-| Rework rate | 6.5% | 42 fix/revert out of 651 conventional commits |
-| PR merge rate | 95.1% | 313 merged |
+| Rework rate | 6.3% | 43 fix/revert out of 682 conventional commits |
+| PR merge rate | 94.9% | 318 merged |
 | Time to merge (median) | 0.39 h | p90 12.73 h |
 | PR size (median) | 6 files | slices stay small |
 
 Work delegated to each role agent, with how often that agent hit a tool error:
 
 ```
-architect  ██████████████████  70   tool errors 6.1%
+architect  ██████████████████  74   tool errors 6.0%
 designer   ██                   8   tool errors 4.9%
-developer  █████████████       50   tool errors 3.3%
-tester     ██████              23   tool errors 2.3%
-reviewer   ███                 11   tool errors 3.4%
+developer  █████████████       54   tool errors 3.3%
+tester     ██████              24   tool errors 2.2%
+reviewer   ███                 13   tool errors 3.0%
 ```
 
-Dispatch thins out toward the later roles — 70 runs of
-the architect against 11 of the reviewer. **The audit step
+Dispatch thins out toward the later roles — 74 runs of
+the architect against 13 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
 [The same data, laid out in full →](https://vazial.github.io/data/)
 
-<sub>Generated 2026-08-24 12:54 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-08-24 22:59 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
@@ -117,5 +117,14 @@ rather than on theory. The first two years were microcontrollers in C, object-or
 programming in Java, and electronic and electrical circuit design down to the soldering
 iron; the applied years added control engineering, production management and robotics.
 
-Being able to move up and down the abstraction stack — from a board to a web
-application — is what the work above has in common.
+Two pieces from that time:
+
+**Production management for a robot cell** (three months) — read control values from
+the PLC and sensors, stored them, showed where each workpiece currently was in a Unity
+view, and produced the analytics side in PHP.
+
+**Capstone: a solar car motor driver** — helped implement the inverter, and wrote up
+the vector control side.
+
+Being able to move up and down the abstraction stack — from field-oriented motor
+control to a booking screen in the browser — is what the work above has in common.
