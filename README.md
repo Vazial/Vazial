@@ -81,15 +81,16 @@ my own drift away from the procedure is the reason the measurements exist.
 
 ## Professional experience
 
-Design and implementation across four systems, listed by what I actually built rather
+Design and implementation across five systems, listed by what I actually built rather
 than by language.
 
 | | Stack |
 |---|---|
-| Control systems | C, C# |
-| Production management | C#, Java (Seasar2), Oracle PL/SQL — batch processing over hundreds of millions of rows, where performance is the binding constraint. Ongoing. |
+| Operator screens for manufacturing equipment | C, C# — enhancement work on an existing system |
+| Production management | C#, Oracle PL/SQL |
 | Batch jobs for an internal authentication platform | Java — Spring Batch, JPA, JUnit, Mockito. This is where I learned the Spring ecosystem and unit testing properly. |
-| [Reception and booking system](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C#, PostgreSQL, Vitest, API types generated from OpenAPI — founding member, from requirements through unit test. In production. |
+| Batch processing for a consumer booking platform | Java (Seasar2), Oracle PL/SQL — around 200 million records, where performance is the binding constraint. Ongoing. |
+| [Meeting-room booking, a few hundred users](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C#, PostgreSQL, Vitest, API types generated from OpenAPI — founding member, from requirements through unit test. In production. |
 
 Container-based development environments — Docker, Podman, Dev Containers — and AWS
 EC2 in a work context.
