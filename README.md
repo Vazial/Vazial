@@ -44,7 +44,7 @@ morning and delivers a single digest to Discord.
 
 #### What the operating data says
 
-`2026-05-30 → 2026-08-24`  ·  **5** projects  ·  **74** sessions  ·  **712** commits  ·  **916** human prompts
+`2026-05-30 → 2026-08-24`  ·  **5** projects  ·  **74** sessions  ·  **716** commits  ·  **928** human prompts
 
 The claims above are worth only as much as the evidence behind them, so the
 numbers here are generated from session logs, git history, and GitHub Actions.
@@ -52,9 +52,9 @@ None of them are written by hand.
 
 | | | |
 |---|---:|---|
-| Verification pass rate | 98.0% | over 800 runs — checks that actually fail, so the gate is real |
-| Rework rate | 6.4% | 44 fix/revert out of 688 conventional commits |
-| PR merge rate | 95.0% | 322 merged |
+| Verification pass rate | 98.5% | over 800 runs — checks that actually fail, so the gate is real |
+| Rework rate | 6.4% | 44 fix/revert out of 692 conventional commits |
+| PR merge rate | 94.4% | 322 merged |
 | Time to merge (median) | 0.39 h | p90 12.53 h |
 | PR size (median) | 6 files | slices stay small |
 
@@ -63,8 +63,8 @@ Work delegated to each role agent, with how often that agent hit a tool error:
 ```
 architect  ██████████████████  77   tool errors 6.0%
 designer   ██                  10   tool errors 4.5%
-developer  █████████████       54   tool errors 3.3%
-tester     ██████              24   tool errors 2.2%
+developer  █████████████       55   tool errors 3.3%
+tester     ██████              25   tool errors 2.2%
 reviewer   ███                 13   tool errors 3.0%
 ```
 
@@ -75,7 +75,7 @@ my own drift away from the procedure is the reason the measurements exist.
 
 [The same data, laid out in full →](https://vazial.github.io/data/)
 
-<sub>Generated 2026-08-24 23:36 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-08-25 00:02 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
