@@ -123,8 +123,8 @@ Two pieces from that time:
 the PLC and sensors, stored them, showed where each workpiece currently was in a Unity
 view, and produced the analytics side in PHP.
 
-**Capstone: a solar car motor driver** — helped implement the inverter, and wrote up
-the vector control side.
+**Capstone: a motor driver** — helped implement the inverter, and wrote up the vector
+control side.
 
 Being able to move up and down the abstraction stack — from field-oriented motor
 control to a booking screen in the browser — is what the work above has in common.
