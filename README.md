@@ -112,16 +112,16 @@ Information-technology Promotion Agency.
 
 ## Background
 
-I trained at a four-year polytechnic college, where the emphasis is on building things
+I trained at a four-year engineering school where the emphasis is on building things
 rather than on theory. The first two years were microcontrollers in C, object-oriented
 programming in Java, and electronic and electrical circuit design down to the soldering
-iron; the applied years added control engineering, production management and robotics.
+iron; the later years added control engineering, production management and robotics.
 
 Two pieces from that time:
 
-**Production management for a robot cell** (three months) — read control values from
-the PLC and sensors, stored them, showed where each workpiece currently was in a Unity
-view, and produced the analytics side in PHP.
+**Production-line tracking** — read control values from the PLC and sensors, stored
+them, showed where each workpiece currently was in a 3D view, and produced the
+analytics side in PHP.
 
 **Capstone: a motor driver** — helped implement the inverter, and wrote up the vector
 control side.
