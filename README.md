@@ -78,24 +78,30 @@ my own drift away from the procedure is the reason the measurements exist.
 
 <!-- dev-telemetry:end -->
 
-## Technical skills
+## Professional experience
 
-Split by what I can actually show, because a flat list doesn't say which claims are
-backed by something you can read.
+Design and implementation across four systems, listed by what I actually built rather
+than by language.
 
-**Demonstrable in public code**
-Java 21 / Spring Boot (hexagonal layering enforced by ArchUnit, Testcontainers against
-real PostgreSQL, Cucumber with a DSL layer, Flyway migrations) · TypeScript (Vitest,
-Playwright end-to-end, API types generated from OpenAPI) · Python · PostgreSQL ·
-GitHub Actions · OpenAPI
+| | Stack |
+|---|---|
+| Control systems | C, C# |
+| Production management system | C#, Oracle PL/SQL (including performance tuning) |
+| Batch processing | Java — Spring Batch, JPA, JUnit, Mockito |
+| [Reception and booking system](https://vazial.github.io/work/) | Vue 3, Tailwind CSS, C# — founding member of a team of seven, from requirements through unit test. In production. |
 
-**Used professionally, not public**
-C#/.NET · Oracle PL/SQL, including performance tuning · C/C++ template metaprogramming
-(CRTP, constexpr, policy-based design)
+Container-based development environments — Docker, Podman, Dev Containers — and AWS
+EC2 in a work context.
 
-**Environments and operations**
-Docker / Podman / Dev Containers · WSL2 tuning · remote development over Tailscale,
-SSH and tmux · AWS (Route 53, EC2) · Render · Vercel · self-hosted GitHub MCP server
+## Also used, in public code only
+
+These come from personal projects, where the code is readable. I have not used them
+professionally.
+
+Java 21 / **Spring Boot** — hexagonal layering enforced by ArchUnit, Testcontainers
+against real PostgreSQL, Cucumber with a DSL layer, Flyway migrations ·
+**TypeScript** with Playwright end-to-end · **Python** · GitHub Actions · Route 53,
+Render, Vercel
 
 ## Certifications
 
@@ -105,9 +111,6 @@ Information-technology Promotion Agency.
 
 ## Background
 
-I studied electronic circuits, embedded systems and VHDL at university. Being able to
-move up and down the abstraction stack, from hardware to applications, still helps.
-
-Currently reading technical documentation in English as ongoing practice, and comparing
-metaprogramming across languages — C++ templates against Source Generators, annotation
-processors and TypeScript conditional types.
+I studied electronic circuits, embedded systems and VHDL at university, and started out
+on control systems. Being able to move up and down the abstraction stack — from
+hardware to web applications — is what the four projects above have in common.
