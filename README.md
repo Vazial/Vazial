@@ -52,30 +52,30 @@ None of them are written by hand.
 
 | | | |
 |---|---:|---|
-| Verification pass rate | 98.5% | over 800 runs — checks that actually fail, so the gate is real |
+| Verification pass rate | 97.9% | over 800 runs — checks that actually fail, so the gate is real |
 | Rework rate | 6.4% | 44 fix/revert out of 688 conventional commits |
-| PR merge rate | 93.8% | 318 merged |
-| Time to merge (median) | 0.39 h | p90 12.73 h |
+| PR merge rate | 95.0% | 322 merged |
+| Time to merge (median) | 0.39 h | p90 12.53 h |
 | PR size (median) | 6 files | slices stay small |
 
 Work delegated to each role agent, with how often that agent hit a tool error:
 
 ```
-architect  ██████████████████  76   tool errors 6.1%
-designer   ██                  10   tool errors 4.7%
+architect  ██████████████████  77   tool errors 6.0%
+designer   ██                  10   tool errors 4.5%
 developer  █████████████       54   tool errors 3.3%
 tester     ██████              24   tool errors 2.2%
 reviewer   ███                 13   tool errors 3.0%
 ```
 
-Dispatch thins out toward the later roles — 76 runs of
+Dispatch thins out toward the later roles — 77 runs of
 the architect against 13 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
 [The same data, laid out in full →](https://vazial.github.io/data/)
 
-<sub>Generated 2026-08-24 23:31 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-08-24 23:34 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
