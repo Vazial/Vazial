@@ -44,7 +44,7 @@ morning and delivers a single digest to Discord.
 
 #### What the operating data says
 
-`2026-05-30 → 2026-08-25`  ·  **5** projects  ·  **74** sessions  ·  **755** commits  ·  **972** human prompts
+`2026-05-30 → 2026-08-26`  ·  **5** projects  ·  **75** sessions  ·  **776** commits  ·  **1006** human prompts
 
 The claims above are worth only as much as the evidence behind them, so the
 numbers here are generated from session logs, git history, and GitHub Actions.
@@ -52,30 +52,30 @@ None of them are written by hand.
 
 | | | |
 |---|---:|---|
-| Verification pass rate | 98.3% | over 800 runs — checks that actually fail, so the gate is real |
-| Rework rate | 7.3% | 53 fix/revert out of 729 conventional commits |
-| PR merge rate | 95.1% | 328 merged |
-| Time to merge (median) | 0.39 h | p90 12.73 h |
+| Verification pass rate | 98.0% | over 802 runs — checks that actually fail, so the gate is real |
+| Rework rate | 7.9% | 59 fix/revert out of 750 conventional commits |
+| PR merge rate | 95.4% | 333 merged |
+| Time to merge (median) | 0.36 h | p90 12.73 h |
 | PR size (median) | 6 files | slices stay small |
 
 Work delegated to each role agent, with how often that agent hit a tool error:
 
 ```
-architect  ██████████████████  81   tool errors 6.0%
-designer   ██                  10   tool errors 4.5%
-developer  ████████████        55   tool errors 3.1%
-tester     ██████              25   tool errors 2.1%
+architect  ██████████████████  84   tool errors 6.0%
+designer   ███                 12   tool errors 4.7%
+developer  █████████████       61   tool errors 3.1%
+tester     ██████              26   tool errors 2.1%
 reviewer   ███                 13   tool errors 3.0%
 ```
 
-Dispatch thins out toward the later roles — 81 runs of
+Dispatch thins out toward the later roles — 84 runs of
 the architect against 13 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
 [The same data, laid out in full →](https://vazial.github.io/data/)
 
-<sub>Generated 2026-08-25 23:30 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-08-26 23:31 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
