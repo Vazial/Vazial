@@ -44,7 +44,7 @@ morning and delivers a single digest to Discord.
 
 #### What the operating data says
 
-`2026-05-30 → 2026-09-05`  ·  **6** projects  ·  **87** sessions  ·  **932** commits  ·  **1144** human prompts
+`2026-05-30 → 2026-09-07`  ·  **6** projects  ·  **89** sessions  ·  **952** commits  ·  **1187** human prompts
 
 The claims above are worth only as much as the evidence behind them, so the
 numbers here are generated from session logs, git history, and GitHub Actions.
@@ -53,29 +53,29 @@ None of them are written by hand.
 | | | |
 |---|---:|---|
 | Verification pass rate | 97.5% | over 802 runs — checks that actually fail, so the gate is real |
-| Rework rate | 10.3% | 93 fix/revert out of 905 conventional commits |
-| PR merge rate | 96.0% | 383 merged |
+| Rework rate | 10.7% | 99 fix/revert out of 924 conventional commits |
+| PR merge rate | 96.0% | 385 merged |
 | Time to merge (median) | 0.39 h | p90 12.53 h |
 | PR size (median) | 6 files | slices stay small |
 
 Work delegated to each role agent, with how often that agent hit a tool error:
 
 ```
-architect  ██████████████████  96   tool errors 5.6%
-designer   █████               29   tool errors 5.0%
-developer  ██████████████████  94   tool errors 2.5%
-tester     ███████             35   tool errors 2.4%
-reviewer   ████                20   tool errors 2.9%
+architect  █████████████████  101   tool errors 5.5%
+designer   ██████              34   tool errors 4.8%
+developer  ██████████████████ 106   tool errors 2.7%
+tester     ███████             39   tool errors 2.5%
+reviewer   ████                21   tool errors 2.8%
 ```
 
-Dispatch thins out toward the later roles — 96 runs of
-the architect against 20 of the reviewer. **The audit step
+Dispatch thins out toward the later roles — 101 runs of
+the architect against 21 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
 [The same data, laid out in full →](https://vazial.github.io/data/)
 
-<sub>Generated 2026-09-05 23:31 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-09-07 19:03 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
