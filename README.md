@@ -44,7 +44,7 @@ morning and delivers a single digest to Discord.
 
 #### What the operating data says
 
-`2026-05-30 → 2026-09-16`  ·  **6** projects  ·  **98** sessions  ·  **1190** commits  ·  **1319** human prompts
+`2026-05-30 → 2026-09-17`  ·  **6** projects  ·  **98** sessions  ·  **1193** commits  ·  **1321** human prompts
 
 The claims above are worth only as much as the evidence behind them, so the
 numbers here are generated from session logs, git history, and GitHub Actions.
@@ -53,7 +53,7 @@ None of them are written by hand.
 | | | |
 |---|---:|---|
 | Verification pass rate | 94.0% | over 802 runs — checks that actually fail, so the gate is real |
-| Rework rate | 10.6% | 123 fix/revert out of 1161 conventional commits |
+| Rework rate | 10.6% | 123 fix/revert out of 1164 conventional commits |
 | PR merge rate | 95.1% | 405 merged |
 | Time to merge (median) | 0.39 h | p90 12.59 h |
 | PR size (median) | 6 files | slices stay small |
@@ -61,21 +61,21 @@ None of them are written by hand.
 Work delegated to each role agent, with how often that agent hit a tool error:
 
 ```
-architect  █████████████████  137   tool errors 4.8%
-designer   ██████              47   tool errors 3.9%
-developer  ██████████████████ 143   tool errors 2.3%
-tester     ███████             54   tool errors 2.3%
+architect  █████████████████  138   tool errors 4.7%
+designer   ██████              47   tool errors 3.8%
+developer  ██████████████████ 144   tool errors 2.3%
+tester     ███████             55   tool errors 2.2%
 reviewer   ███                 27   tool errors 2.3%
 ```
 
-Dispatch thins out toward the later roles — 137 runs of
+Dispatch thins out toward the later roles — 138 runs of
 the architect against 27 of the reviewer. **The audit step
 is not being run as often as the rules call for.** I'm leaving that in view: catching
 my own drift away from the procedure is the reason the measurements exist.
 
 [The same data, laid out in full →](https://vazial.github.io/data/)
 
-<sub>Generated 2026-09-17 07:06 from session logs, <code>git log</code>, and GitHub Actions.</sub>
+<sub>Generated 2026-09-17 23:31 from session logs, <code>git log</code>, and GitHub Actions.</sub>
 
 <!-- dev-telemetry:end -->
 
